@@ -1,0 +1,209 @@
+
+Lessons Learned and Future capabilities
+9
+<p class="MsoNormal" style="margin: 0.05in 0in 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:
+13.5pt;mso-ascii-font-family:Aptos;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:Aptos;mso-bidi-font-family:&quot;Times New Roman&quot;;color:#283C46;
+mso-font-kerning:0pt;mso-ligatures:none">&nbsp;</span></b><span style="color: rgb(40, 60, 70); font-size: 13.5pt;">Continuous model refinement and integration of real-time
+feedback are necessary for sustained accuracy and relevance.</span><br></p>
+
+<p class="MsoNormal" style="margin: 0.05in 0in 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size: 13.5pt; color: rgb(40, 60, 70); background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;</span><span style="color: rgb(40, 60, 70); font-size: 13.5pt;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin: 0.05in 0in 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:
+13.5pt;mso-ascii-font-family:Aptos;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:Aptos;mso-bidi-font-family:&quot;Times New Roman&quot;;color:#283C46;
+mso-font-kerning:0pt;mso-ligatures:none">Challenges and Solutions<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin: 0.05in 0in 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:
+13.5pt;mso-ascii-font-family:Aptos;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:Aptos;mso-bidi-font-family:&quot;Times New Roman&quot;;color:#283C46;
+mso-font-kerning:0pt;mso-ligatures:none">&nbsp;</span></b></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:13.5pt;mso-ascii-font-family:Aptos;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:Aptos;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:#283C46;mso-font-kerning:0pt;mso-ligatures:none">Several Challenges were
+encountered during the implementation of the project.<br>
+<!--[if !supportLineBreakNewLine]--><br>
+<!--[endif]--><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:13.5pt;mso-ascii-font-family:Aptos;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:Aptos;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:#283C46;mso-font-kerning:0pt;mso-ligatures:none">1.</span></b><span style="font-size:13.5pt;mso-ascii-font-family:Aptos;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:Aptos;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:#283C46;mso-font-kerning:0pt;mso-ligatures:none">&nbsp; &nbsp;&nbsp;<b>Data
+inconsistency and missing values :</b>&nbsp;This&nbsp; was addressed through
+data transformation techniques in Numtra.<br>
+<!--[if !supportLineBreakNewLine]--><br>
+<!--[endif]--><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:13.5pt;mso-ascii-font-family:Aptos;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:Aptos;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:#283C46;mso-font-kerning:0pt;mso-ligatures:none">2.</span></b><span style="font-size:13.5pt;mso-ascii-font-family:Aptos;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:Aptos;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:#283C46;mso-font-kerning:0pt;mso-ligatures:none">&nbsp; &nbsp;&nbsp;<b>Numtra
+to Fabric Issues :</b>&nbsp;the Jupyter code generated in Numtra was not
+compatible with Microsoft Fabric. Thus the Jupyter code generated in Numtra had
+to be converted to Spark/python which is compatible with Microsoft
+Fabric.&nbsp;<br>
+<!--[if !supportLineBreakNewLine]--><br>
+<!--[endif]--><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:13.5pt;mso-ascii-font-family:Aptos;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:Aptos;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:#283C46;mso-font-kerning:0pt;mso-ligatures:none">3.</span></b><span style="font-size:13.5pt;mso-ascii-font-family:Aptos;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-hansi-font-family:Aptos;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:#283C46;mso-font-kerning:0pt;mso-ligatures:none">&nbsp; &nbsp;&nbsp;<b>DAX
+YoY calculation :</b>&nbsp;This was another challenge to get the correct Year
+over Year results for the sliced and diced data.<br>
+<br>
+<b>4.&nbsp; &nbsp; Images in Slicer :</b>&nbsp;Insert images in Slicer was yet
+another challenge. After some study and research I was able to figure out the
+different ways that involved several steps like&nbsp; finding the images,
+saving it, creating links to those images. Creating a table and then populating
+these image links in it. Creating relationship with other existing table. Make
+certain settings and finally access the images in the New Slicer provided in
+Power BI.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 0.05in 0in 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:
+13.5pt;mso-ascii-font-family:Aptos;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:Aptos;mso-bidi-font-family:&quot;Times New Roman&quot;;color:#283C46;
+mso-font-kerning:0pt;mso-ligatures:none">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin: 0.05in 0in 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"></v:stroke>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"></v:f>
+  <v:f eqn="sum @0 1 0"></v:f>
+  <v:f eqn="sum 0 0 @1"></v:f>
+  <v:f eqn="prod @2 1 2"></v:f>
+  <v:f eqn="prod @3 21600 pixelWidth"></v:f>
+  <v:f eqn="prod @3 21600 pixelHeight"></v:f>
+  <v:f eqn="sum @0 0 1"></v:f>
+  <v:f eqn="prod @6 1 2"></v:f>
+  <v:f eqn="prod @7 21600 pixelWidth"></v:f>
+  <v:f eqn="sum @8 21600 0"></v:f>
+  <v:f eqn="prod @7 21600 pixelHeight"></v:f>
+  <v:f eqn="sum @10 21600 0"></v:f>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"></v:path>
+ <o:lock v:ext="edit" aspectratio="t"></o:lock>
+</v:shapetype><v:shape id="Picture_x0020_58" o:spid="_x0000_i1026" type="#_x0000_t75"
+ alt="A person shaking hands with a person&#10;&#10;Description automatically generated"
+ style='width:468pt;height:246pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="file:///C:/Users/priya/AppData/Local/Temp/msohtmlclip1/01/clip_image001.jpg"
+  o:title="A person shaking hands with a person&#10;&#10;Description automatically generated"></v:imagedata>
+</v:shape><![endif]--><!--[if !vml]--><!--[endif]--><span style="font-size:13.5pt;
+mso-ascii-font-family:Aptos;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:Aptos;mso-bidi-font-family:&quot;Times New Roman&quot;;color:#283C46;
+mso-font-kerning:0pt;mso-ligatures:none"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 0.05in 0in 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:
+13.5pt;mso-ascii-font-family:Aptos;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:Aptos;mso-bidi-font-family:&quot;Times New Roman&quot;;color:#283C46;
+mso-font-kerning:0pt;mso-ligatures:none">&nbsp;</span><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1505/28/3.jpg" style="width: 50%;"></p>
+
+<p class="MsoNormal" style="margin: 0.05in 0in 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:
+13.5pt;mso-ascii-font-family:Aptos;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:Aptos;mso-bidi-font-family:&quot;Times New Roman&quot;;color:#283C46;
+mso-font-kerning:0pt;mso-ligatures:none">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin: 0.05in 0in 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:
+13.5pt;mso-ascii-font-family:Aptos;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:Aptos;mso-bidi-font-family:&quot;Times New Roman&quot;;color:#283C46;
+mso-font-kerning:0pt;mso-ligatures:none">&nbsp;</span><span style="color: rgb(40, 60, 70); font-size: 13.5pt;">&nbsp;</span></p><p class="MsoNormal" style="margin: 0.05in 0in 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size:
+13.5pt;mso-ascii-font-family:Aptos;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:Aptos;mso-bidi-font-family:&quot;Times New Roman&quot;;color:#283C46;
+mso-font-kerning:0pt;mso-ligatures:none">&nbsp;</span><b><span style="font-size:
+13.5pt;mso-ascii-font-family:Aptos;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:Aptos;mso-bidi-font-family:&quot;Times New Roman&quot;;color:#283C46;
+mso-font-kerning:0pt;mso-ligatures:none">Lessons Learned</span></b></p><p class="MsoNormal" style="margin: 0.05in 0in 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:
+13.5pt;mso-ascii-font-family:Aptos;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:Aptos;mso-bidi-font-family:&quot;Times New Roman&quot;;color:#283C46;
+mso-font-kerning:0pt;mso-ligatures:none">&nbsp;</span></b></p><p class="MsoNormal" style="margin: 0.05in 0in 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size: 13.5pt; color: rgb(40, 60, 70); background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Continuous model refinement and integration of real-time
+feedback are necessary for sustained accuracy and relevance. Effective
+communication with stakeholders is essential for turning data into actionable
+insights and making informed decisions. Presenting data as a narrative helps
+stakeholders understand its context and relevance. Clearly communicating the
+business benefits ensures stakeholders see the value and impact of the
+insights. Tailoring the communication to the audience's needs makes the insights
+accessible and relevant. Building trust through accurate data and using clear
+visualizations simplifies complex information, enabling confident
+decision-making.<o:p></o:p></span></p><p class="MsoNormal" style="margin: 0.05in 0in 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size: 13.5pt; color: rgb(40, 60, 70); background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;</span><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1505/28/4.jpg" style="width: 50%;"></p><p class="MsoNormal" style="margin: 0.05in 0in 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p class="MsoNormal" style="margin: 0.05in 0in 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><!--[if gte vml 1]><v:shape id="Picture_x0020_59"
+ o:spid="_x0000_i1025" type="#_x0000_t75" alt="A person wearing glasses and a tie&#10;&#10;Description automatically generated"
+ style='width:468pt;height:234pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="file:///C:/Users/priya/AppData/Local/Temp/msohtmlclip1/01/clip_image003.jpg"
+  o:title="A person wearing glasses and a tie&#10;&#10;Description automatically generated"></v:imagedata>
+</v:shape><![endif]--><!--[if !vml]--><!--[endif]--><span style="font-size: 13.5pt; color: rgb(40, 60, 70); background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><o:p></o:p></span></p><p class="MsoNormal" style="margin: 0.05in 0in 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:
+13.5pt;mso-ascii-font-family:Aptos;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:Aptos;mso-bidi-font-family:&quot;Times New Roman&quot;;color:#283C46;
+mso-font-kerning:0pt;mso-ligatures:none"><br></span></b></p><p class="MsoNormal" style="margin: 0.05in 0in 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:
+13.5pt;mso-ascii-font-family:Aptos;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:Aptos;mso-bidi-font-family:&quot;Times New Roman&quot;;color:#283C46;
+mso-font-kerning:0pt;mso-ligatures:none"><br></span></b></p><p class="MsoNormal" style="margin: 0.05in 0in 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:
+13.5pt;mso-ascii-font-family:Aptos;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:Aptos;mso-bidi-font-family:&quot;Times New Roman&quot;;color:#283C46;
+mso-font-kerning:0pt;mso-ligatures:none">Future Capabilities<o:p></o:p></span></b></p>
+
+<p class="MsoNormal" style="margin: 0.05in 0in 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><b><span style="font-size:
+13.5pt;mso-ascii-font-family:Aptos;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:Aptos;mso-bidi-font-family:&quot;Times New Roman&quot;;color:#283C46;
+mso-font-kerning:0pt;mso-ligatures:none">&nbsp;</span></b></p>
+
+<p class="MsoNormal" style="margin: 0.05in 0in 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size: 13.5pt; color: rgb(40, 60, 70); background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">In envisioning Airbnb's future, we foresee a transformative
+shift towards data-driven predictive analytics, which will revolutionize the
+tourism industry. Advanced algorithms will enable precise forecasting of
+property market trends, empowering hosts to make informed decisions and
+maintain a competitive edge. This evolution will extend to proactive investment
+strategies, where predictive models guide pricing and occupancy optimization
+for maximum returns. Embracing this data-driven approach promises to redefine
+industry standards, positioning Airbnb hosts as pioneers of innovation and
+efficiency.<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin: 0.05in 0in 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="font-size: 13.5pt; color: rgb(40, 60, 70); background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;</span></p><p class="MsoNormal" style="margin: 0.05in 0in 0in; line-height: normal; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><img src="https://app.colaberry.com/uploads/ProjectStepsImages/1505/4/1.jpg" style="width: 50%;"><span style="font-size: 13.5pt; color: rgb(40, 60, 70); background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><br></span></p>
+
+<p><a href="https://uk.indeed.com/career-advice/career-development/lessons-learned-examples" target="_blank">Lessons learned</a><br></p>
+
